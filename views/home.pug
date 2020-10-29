@@ -1,0 +1,47 @@
+extends base.pug
+block scripts
+    script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+block footer
+    footer#footerSection
+        | Copyright © 2020 AmritDanceAcademy.com All right | reserved
+block content
+
+    section#introSection
+        div Welcome to Amrit's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h3 Our Mission
+        div.card
+          h4 Dance Perfection
+          div.card-box
+            div.card-img
+              img(src="/static/img/1.png", alt="")
+            div.card-content
+                p This is the best dance academy in the universe.
+        div.card
+          h4 Dance the way you like 
+          div.card-box
+              div.card-img
+                img(src="/static/img/2.png", alt="")
+              div.card-content
+                p This is the best dance academy in the universe.
+        div.card
+          h4 Perfect Dancing
+          div.card-box
+              div.card-img
+                img(src="/static/img/3.png", alt="")
+              div.card-content
+                p This is the best dance academy in the universe.
+      
+
+    section#sponsorSection
+        h3 Our Sponsors
+        div#sponsors
+          img(src="/static/img/logo1.png", alt="Sponsor Image" class="spImage")
+          img(src="/static/img/logo2.png", alt="Sponsor Image" class="spImage")
+          img(src="/static/img/logo3.png", alt="Sponsor Image" class="spImage")
+          img(src="/static/img/logo4.png", alt="Sponsor Image" class="spImage")
